@@ -13,6 +13,8 @@
 		E90A3C661C192100002D6323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90A3C651C192100002D6323 /* Assets.xcassets */; };
 		E90A3C691C192100002D6323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90A3C671C192100002D6323 /* LaunchScreen.storyboard */; };
 		E92991481C19330B002EF6F3 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92991471C19330B002EF6F3 /* ParseUI.framework */; };
+		E9D257611C1A183200592922 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D257601C1A183200592922 /* LoginViewController.swift */; };
+		E9D257631C1A185800592922 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D257621C1A185800592922 /* SignupViewController.swift */; };
 		E9E0142C1C1935DC00485101 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E0142B1C1935DC00485101 /* Accounts.framework */; };
 		E9E0142E1C1935F000485101 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E0142D1C1935F000485101 /* AudioToolbox.framework */; };
 		E9E014301C1935FC00485101 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E0142F1C1935FC00485101 /* CFNetwork.framework */; };
@@ -25,8 +27,6 @@
 		E9E0143E1C19363F00485101 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E0143D1C19363F00485101 /* libz.tbd */; };
 		E9E014401C19364500485101 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E0143F1C19364500485101 /* libsqlite3.tbd */; };
 		E9E014421C19364B00485101 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E014411C19364B00485101 /* Social.framework */; };
-		E9E014441C1941D500485101 /* loginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E014431C1941D500485101 /* loginScreen.swift */; };
-		E9E014461C1941EC00485101 /* signupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E014451C1941EC00485101 /* signupScreen.swift */; };
 		E9FB1F391C192C08009C6652 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FB1F341C192C08009C6652 /* Bolts.framework */; };
 		E9FB1F3A1C192C08009C6652 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FB1F351C192C08009C6652 /* Parse.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +40,8 @@
 		E90A3C681C192100002D6323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90A3C6A1C192100002D6323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E92991471C19330B002EF6F3 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = SOURCE_ROOT; };
+		E9D257601C1A183200592922 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9D257621C1A185800592922 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E9E0142B1C1935DC00485101 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		E9E0142D1C1935F000485101 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E9E0142F1C1935FC00485101 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -52,8 +54,6 @@
 		E9E0143D1C19363F00485101 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E9E0143F1C19364500485101 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E9E014411C19364B00485101 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		E9E014431C1941D500485101 /* loginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginScreen.swift; sourceTree = "<group>"; };
-		E9E014451C1941EC00485101 /* signupScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signupScreen.swift; sourceTree = "<group>"; };
 		E9FB1F341C192C08009C6652 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.10.0/Bolts.framework"; sourceTree = "<group>"; };
 		E9FB1F351C192C08009C6652 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.10.0/Parse.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,18 +87,6 @@
 		E90A3C521C192100002D6323 = {
 			isa = PBXGroup;
 			children = (
-				E9E014411C19364B00485101 /* Social.framework */,
-				E9E0143F1C19364500485101 /* libsqlite3.tbd */,
-				E9E0143D1C19363F00485101 /* libz.tbd */,
-				E9E0143B1C19363700485101 /* SystemConfiguration.framework */,
-				E9E014391C19362E00485101 /* StoreKit.framework */,
-				E9E014371C19361B00485101 /* Security.framework */,
-				E9E014351C19361400485101 /* QuartzCore.framework */,
-				E9E014331C19360A00485101 /* CoreLocation.framework */,
-				E9E014311C19360400485101 /* CoreGraphics.framework */,
-				E9E0142F1C1935FC00485101 /* CFNetwork.framework */,
-				E9E0142D1C1935F000485101 /* AudioToolbox.framework */,
-				E9E0142B1C1935DC00485101 /* Accounts.framework */,
 				E90A3C5D1C192100002D6323 /* final_project */,
 				E90A3C5C1C192100002D6323 /* Products */,
 			);
@@ -118,8 +106,8 @@
 				E9FB1F331C192BF1009C6652 /* Framework */,
 				E90A3C5E1C192100002D6323 /* AppDelegate.swift */,
 				E90A3C601C192100002D6323 /* ViewController.swift */,
-				E9E014431C1941D500485101 /* loginScreen.swift */,
-				E9E014451C1941EC00485101 /* signupScreen.swift */,
+				E9D257601C1A183200592922 /* LoginViewController.swift */,
+				E9D257621C1A185800592922 /* SignupViewController.swift */,
 				E90A3C621C192100002D6323 /* Main.storyboard */,
 				E90A3C651C192100002D6323 /* Assets.xcassets */,
 				E90A3C671C192100002D6323 /* LaunchScreen.storyboard */,
@@ -131,6 +119,18 @@
 		E9FB1F331C192BF1009C6652 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				E9E014411C19364B00485101 /* Social.framework */,
+				E9E0143F1C19364500485101 /* libsqlite3.tbd */,
+				E9E0143D1C19363F00485101 /* libz.tbd */,
+				E9E0143B1C19363700485101 /* SystemConfiguration.framework */,
+				E9E014391C19362E00485101 /* StoreKit.framework */,
+				E9E014371C19361B00485101 /* Security.framework */,
+				E9E014351C19361400485101 /* QuartzCore.framework */,
+				E9E014331C19360A00485101 /* CoreLocation.framework */,
+				E9E014311C19360400485101 /* CoreGraphics.framework */,
+				E9E0142F1C1935FC00485101 /* CFNetwork.framework */,
+				E9E0142D1C1935F000485101 /* AudioToolbox.framework */,
+				E9E0142B1C1935DC00485101 /* Accounts.framework */,
 				E92991471C19330B002EF6F3 /* ParseUI.framework */,
 				E9FB1F341C192C08009C6652 /* Bolts.framework */,
 				E9FB1F351C192C08009C6652 /* Parse.framework */,
@@ -210,10 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E014441C1941D500485101 /* loginScreen.swift in Sources */,
+				E9D257611C1A183200592922 /* LoginViewController.swift in Sources */,
 				E90A3C611C192100002D6323 /* ViewController.swift in Sources */,
+				E9D257631C1A185800592922 /* SignupViewController.swift in Sources */,
 				E90A3C5F1C192100002D6323 /* AppDelegate.swift in Sources */,
-				E9E014461C1941EC00485101 /* signupScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
