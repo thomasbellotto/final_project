@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E90A3C5F1C192100002D6323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A3C5E1C192100002D6323 /* AppDelegate.swift */; };
-		E90A3C611C192100002D6323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A3C601C192100002D6323 /* ViewController.swift */; };
 		E90A3C641C192100002D6323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90A3C621C192100002D6323 /* Main.storyboard */; };
 		E90A3C661C192100002D6323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90A3C651C192100002D6323 /* Assets.xcassets */; };
 		E90A3C691C192100002D6323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90A3C671C192100002D6323 /* LaunchScreen.storyboard */; };
 		E92991481C19330B002EF6F3 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92991471C19330B002EF6F3 /* ParseUI.framework */; };
+		E9AF78581C2283D70052E244 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AF78571C2283D70052E244 /* TableViewController.swift */; };
 		E9D257611C1A183200592922 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D257601C1A183200592922 /* LoginViewController.swift */; };
 		E9D257631C1A185800592922 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D257621C1A185800592922 /* SignupViewController.swift */; };
 		E9E0142C1C1935DC00485101 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E0142B1C1935DC00485101 /* Accounts.framework */; };
@@ -34,12 +34,12 @@
 /* Begin PBXFileReference section */
 		E90A3C5B1C192100002D6323 /* final_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90A3C5E1C192100002D6323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E90A3C601C192100002D6323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E90A3C631C192100002D6323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E90A3C651C192100002D6323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90A3C681C192100002D6323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90A3C6A1C192100002D6323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E92991471C19330B002EF6F3 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = SOURCE_ROOT; };
+		E9AF78571C2283D70052E244 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E9D257601C1A183200592922 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9D257621C1A185800592922 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E9E0142B1C1935DC00485101 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -105,9 +105,9 @@
 			children = (
 				E9FB1F331C192BF1009C6652 /* Framework */,
 				E90A3C5E1C192100002D6323 /* AppDelegate.swift */,
-				E90A3C601C192100002D6323 /* ViewController.swift */,
 				E9D257601C1A183200592922 /* LoginViewController.swift */,
 				E9D257621C1A185800592922 /* SignupViewController.swift */,
+				E9AF78571C2283D70052E244 /* TableViewController.swift */,
 				E90A3C621C192100002D6323 /* Main.storyboard */,
 				E90A3C651C192100002D6323 /* Assets.xcassets */,
 				E90A3C671C192100002D6323 /* LaunchScreen.storyboard */,
@@ -211,8 +211,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D257611C1A183200592922 /* LoginViewController.swift in Sources */,
-				E90A3C611C192100002D6323 /* ViewController.swift in Sources */,
 				E9D257631C1A185800592922 /* SignupViewController.swift in Sources */,
+				E9AF78581C2283D70052E244 /* TableViewController.swift in Sources */,
 				E90A3C5F1C192100002D6323 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

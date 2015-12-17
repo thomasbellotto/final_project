@@ -14,6 +14,8 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var statusField: UITextField!
+    @IBOutlet weak var nameField: UITextField!
     
     var actInd : UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0, 150, 150)) as UIActivityIndicatorView
     
@@ -47,6 +49,8 @@ class SignupViewController: UIViewController {
         var username = self.usernameField.text
         var password = self.passwordField.text
         var email = self.emailField.text
+        var status = self.statusField.text
+        var name = self.nameField.text
         
         if (username!.utf16.count < 4 || password!.utf16.count < 5) {
             
@@ -58,7 +62,12 @@ class SignupViewController: UIViewController {
             var alert = UIAlertView(title: "Invalid", message: "Please enter a valid password.", delegate: self, cancelButtonTitle: "OK")
             alert.show()
             
-        }else {
+        } else if (status!.utf16.count < 1) {
+            
+            var alert = UIAlertView(title: "Invalid", message: "Please enter a valid Status.", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+            
+        } else {
             
             self.actInd.startAnimating()
             
@@ -66,6 +75,16 @@ class SignupViewController: UIViewController {
             newUser.username = username
             newUser.password = password
             newUser.email = email
+            newUser["Name"] = name
+            
+            if (status! == "student"){
+                status = "student"
+                newUser["status"] = status
+            } else if (status! == "A1b2C3") {
+                status = "teacher"
+                newUser["status"] = status
+            }
+            
             
             newUser.signUpInBackgroundWithBlock({ (succeed, error) -> Void in
                 
@@ -80,13 +99,8 @@ class SignupViewController: UIViewController {
                     
                     var alert = UIAlertView(title: "Success", message: "Signed Up", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
-                    
                 }
-                
             })
-            
         }
-        
     }
-    
 }
