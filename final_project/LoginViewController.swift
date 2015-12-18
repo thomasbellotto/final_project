@@ -61,7 +61,7 @@ class LoginViewController: UIViewController {
                 
                 if ((user) != nil) {
                     
-                    var alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
+                    var alert = UIAlertView(title: "Success", message: "Welcome. You have logged in.", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                     self.performSegueWithIdentifier("forum", sender: self)
                     
@@ -80,7 +80,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func signUpAction(sender: AnyObject) {
         
-        self.performSegueWithIdentifier("forum", sender: self)
+        self.performSegueWithIdentifier("signUp", sender: self)
         
     }
 

@@ -32,6 +32,7 @@ class TableViewController: PFQueryTableViewController {
         query.orderByAscending("title")
         return query
     }
+
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell {
         
@@ -44,16 +45,22 @@ class TableViewController: PFQueryTableViewController {
         if let title = object?["title"] as? String {
             cell?.textLabel?.text = title
         }
-        
         return cell
     }
+    
+    //Mark: ACTIONS
     
     @IBAction func signOut(sender: AnyObject) {
         
         PFUser.logOut()
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as UIViewController
-        self.presentViewController(vc, animated: true, completion: nil)
+        var alert = UIAlertView(title: "Logged Out", message: "See you soon.", delegate: self, cancelButtonTitle: "OK")
+        self.navigationController!.popToRootViewControllerAnimated(true)
     }
+    
+    @IBAction func addbtn(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("addcomment", sender: self)
+        
+    }
+    
 }
