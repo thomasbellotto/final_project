@@ -17,6 +17,7 @@ class addViewController: UIViewController {
     @IBOutlet weak var commentfld: UITextView!
     
     var actInd : UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0, 150, 150)) as UIActivityIndicatorView
+    // Container to store the view table selected object var currentObject : PFObject?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,14 @@ class addViewController: UIViewController {
         self.actInd.hidesWhenStopped = true
         self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         view.addSubview(self.actInd)
+        
+        var currentObject : PFObject?
+        
+        if var object = currentObject {
+           titlefld.text = object["title"] as! String
+            commentfld.text = object["content"] as! String
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,26 +58,24 @@ class addViewController: UIViewController {
         var title = self.titlefld.text
         var content = self.commentfld.text
         
-        if let updateObject = PFObject?() {
+        if let currentObject = PFObject?() {
             
             // Update the existing parse object
-            updateObject["title"] = title
-            updateObject["content"] = content
-            
-            // Save the data back to the server in a background task
-            updateObject.saveEventually()
+            currentObject["title"] = title
+            currentObject["content"] = content
+            currentObject.saveEventually()
             
         } else {
             
             // Create a new parse object
-            var updateObject = PFObject(className:"Comment")
+            var currentObject = PFObject(className:"Comment")
             
-            updateObject["title"] = title
-            updateObject["content"] = content
-            updateObject.ACL = PFACL(user: PFUser.currentUser()!)
+            currentObject["title"] = title
+            currentObject["content"] = content
+            currentObject.ACL = PFACL(user: PFUser.currentUser()!)
             
             // Save the data back to the server in a background task
-            updateObject.saveEventually()
+            currentObject.saveEventually()
             
         }
         

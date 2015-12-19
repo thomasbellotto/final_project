@@ -48,31 +48,19 @@ class TableViewController: PFQueryTableViewController {
         return cell
     }
   
-    /*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        
         // Get the new view controller using [segue destinationViewController].
-        var detailScene = segue.destinationViewController as! DetailViewController
+        var detailScene = segue.destinationViewController as! addViewController
         
         // Pass the selected object to the destination view controller.
         if var indexPath = self.tableView.indexPathForSelectedRow {
-            var row = Int(indexPath.row)
-            detailScene.updateObject = (objects?[row] as! PFObject)
-        }
-    } */
-    
-  /*  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        // Get the new view controller using [segue destinationViewController].
-        var detailScene = segue.destinationViewController as! commentViewController
-        
-        // Pass the selected object to the destination view controller.
-        if let indexPath = self.tableView.indexPathForSelectedRow {
             let row = Int(indexPath.row)
-            detailScene.currentObject = (objects?[row] as! PFObject)
+            //detailScene.currentObject = (objects![row] as! PFObject)
         }
-    } */
+    }
     
     //Mark: ACTIONS
     
