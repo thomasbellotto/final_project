@@ -11,10 +11,10 @@
 		E90A3C641C192100002D6323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90A3C621C192100002D6323 /* Main.storyboard */; };
 		E90A3C661C192100002D6323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90A3C651C192100002D6323 /* Assets.xcassets */; };
 		E90A3C691C192100002D6323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90A3C671C192100002D6323 /* LaunchScreen.storyboard */; };
+		E92151821C24DEB80018E0B7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92151811C24DEB80018E0B7 /* DetailViewController.swift */; };
 		E92991481C19330B002EF6F3 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92991471C19330B002EF6F3 /* ParseUI.framework */; };
 		E95628DE1C23CC3000FA9DDB /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95628DD1C23CC3000FA9DDB /* addViewController.swift */; };
 		E9AF78581C2283D70052E244 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AF78571C2283D70052E244 /* TableViewController.swift */; };
-		E9BC54F71C239D9C000B4D02 /* commentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC54F61C239D9C000B4D02 /* commentViewController.swift */; };
 		E9D257611C1A183200592922 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D257601C1A183200592922 /* LoginViewController.swift */; };
 		E9D257631C1A185800592922 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D257621C1A185800592922 /* SignupViewController.swift */; };
 		E9E0142C1C1935DC00485101 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E0142B1C1935DC00485101 /* Accounts.framework */; };
@@ -40,10 +40,10 @@
 		E90A3C651C192100002D6323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90A3C681C192100002D6323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90A3C6A1C192100002D6323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92151811C24DEB80018E0B7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E92991471C19330B002EF6F3 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = SOURCE_ROOT; };
 		E95628DD1C23CC3000FA9DDB /* addViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		E9AF78571C2283D70052E244 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		E9BC54F61C239D9C000B4D02 /* commentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commentViewController.swift; sourceTree = "<group>"; };
 		E9D257601C1A183200592922 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9D257621C1A185800592922 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E9E0142B1C1935DC00485101 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -112,12 +112,12 @@
 				E9D257601C1A183200592922 /* LoginViewController.swift */,
 				E9D257621C1A185800592922 /* SignupViewController.swift */,
 				E9AF78571C2283D70052E244 /* TableViewController.swift */,
-				E9BC54F61C239D9C000B4D02 /* commentViewController.swift */,
 				E95628DD1C23CC3000FA9DDB /* addViewController.swift */,
 				E90A3C621C192100002D6323 /* Main.storyboard */,
 				E90A3C651C192100002D6323 /* Assets.xcassets */,
 				E90A3C671C192100002D6323 /* LaunchScreen.storyboard */,
 				E90A3C6A1C192100002D6323 /* Info.plist */,
+				E92151811C24DEB80018E0B7 /* DetailViewController.swift */,
 			);
 			path = final_project;
 			sourceTree = "<group>";
@@ -217,11 +217,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D257611C1A183200592922 /* LoginViewController.swift in Sources */,
-				E9BC54F71C239D9C000B4D02 /* commentViewController.swift in Sources */,
 				E9D257631C1A185800592922 /* SignupViewController.swift in Sources */,
 				E9AF78581C2283D70052E244 /* TableViewController.swift in Sources */,
 				E95628DE1C23CC3000FA9DDB /* addViewController.swift in Sources */,
 				E90A3C5F1C192100002D6323 /* AppDelegate.swift in Sources */,
+				E92151821C24DEB80018E0B7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

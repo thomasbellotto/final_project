@@ -138,61 +138,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="dc4-Yn-hpN" kind="show" identifier="addcomment" id="KqR-01-CFj"/>
-                        <segue destination="KW1-Za-XCW" kind="show" identifier="viewcomment" id="6nO-vu-6we"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ef-2T-jnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="822" y="362"/>
-        </scene>
-        <!--Comment View Controller-->
-        <scene sceneID="dmE-5N-Nuu">
-            <objects>
-                <viewController id="KW1-Za-XCW" customClass="commentViewController" customModule="final_project" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kII-le-hLD"/>
-                        <viewControllerLayoutGuide type="bottom" id="l11-Ku-Phy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="G7i-eG-cvk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="baz-BG-sdG">
-                                <rect key="frame" x="40" y="116" width="240" height="33"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="Zzf-ZE-smS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u7H-os-oSw">
-                                <rect key="frame" x="20" y="191" width="280" height="289"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.83397587274297225" green="1" blue="0.94260529584086972" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="u7H-os-oSw" firstAttribute="leading" secondItem="G7i-eG-cvk" secondAttribute="leadingMargin" constant="4" id="4Xn-cl-tb4"/>
-                            <constraint firstItem="u7H-os-oSw" firstAttribute="centerX" secondItem="G7i-eG-cvk" secondAttribute="centerX" id="Dw3-dN-Nzv"/>
-                            <constraint firstItem="l11-Ku-Phy" firstAttribute="top" secondItem="u7H-os-oSw" secondAttribute="bottom" constant="44" id="O2D-pT-qg6"/>
-                            <constraint firstItem="u7H-os-oSw" firstAttribute="top" secondItem="baz-BG-sdG" secondAttribute="bottom" constant="42" id="R0T-Ym-XEE"/>
-                            <constraint firstItem="baz-BG-sdG" firstAttribute="leading" secondItem="G7i-eG-cvk" secondAttribute="leadingMargin" constant="24" id="WiW-Pj-XzB"/>
-                            <constraint firstItem="baz-BG-sdG" firstAttribute="top" secondItem="kII-le-hLD" secondAttribute="bottom" constant="52" id="w43-uK-lC8"/>
-                            <constraint firstItem="u7H-os-oSw" firstAttribute="centerX" secondItem="baz-BG-sdG" secondAttribute="centerX" id="yNI-KW-QBg"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="commentcomnt" destination="u7H-os-oSw" id="MzO-WX-qYq"/>
-                        <outlet property="titlecomment" destination="baz-BG-sdG" id="5EV-uS-ie4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S8R-Al-gNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="822" y="1130"/>
         </scene>
         <!--Add View Controller-->
         <scene sceneID="5NF-8g-Tn3">

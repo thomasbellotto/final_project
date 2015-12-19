@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        Parse.setApplicationId("LPhfzfjiHR30GbYyt5RP2aWgxOYwYjPmFCwlBsAS", clientKey:"uDQnSEgGROSaez366Sk4DQlC0AlCc4Jg3z10OeQy")
+        //Parse.setApplicationId("LPhfzfjiHR30GbYyt5RP2aWgxOYwYjPmFCwlBsAS", clientKey:"uDQnSEgGROSaez366Sk4DQlC0AlCc4Jg3z10OeQy")
+        //Parse.setApplicationId("dZAfQ7v9o7rkWn8dXFJZUqE2AJCVCtJ4xa9jP9OA", clientKey:"qMeO2AQc2SHgiyn8DgNBB3oVGn2XSnWuZS1C6jR9")
+        Parse.setApplicationId("9cTEPhALPtIZG62RxjiQYFZfE9hp0EQZ2C8bALlP", clientKey: "FXs8qkbRUWQm0xfK57LYFWPJTzsLjeNiU0dbozOB")
+
         return true
     }
 

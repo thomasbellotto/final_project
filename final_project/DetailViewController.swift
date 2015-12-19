@@ -1,23 +1,26 @@
 //
-//  commentViewController.swift
+//  DetailViewController.swift
 //  final_project
 //
-//  Created by Thomas Silva on 2015-12-17.
+//  Created by Thomas Silva on 2015-12-18.
 //  Copyright © 2015 Thomas Silva. All rights reserved.
 //
 
 import UIKit
 import Parse
 
-class commentViewController: UIViewController {
+class DetailViewController: UIViewController {
 
-    @IBOutlet weak var titlecomment: UITextView!
-    @IBOutlet weak var commentcomnt: UITextView!
+    @IBOutlet weak var titlefld: UITextField!
+    @IBOutlet weak var contentfld: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if var currentObject = PFObject?() {
+            titlefld.text = currentObject["title"] as! String
+            contentfld.text = currentObject["content"] as! String
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +32,8 @@ class commentViewController: UIViewController {
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // In a storyboard-based application, you will often want to do a little 
+    preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
